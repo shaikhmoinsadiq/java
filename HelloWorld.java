@@ -1,6 +1,15 @@
-public class HelloWorld {
-   public static void main(String[] args) {
-      // Prints "Hello, I am here in the terminal window.
-      System.out.println("Hello all, Welcome to Winning moin vaibahav and shiva");
-   }
+import javax.swing.JFrame;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+class ShowPicture {
+ public static void main(String args[]) {
+  JFrame frame = new JFrame();
+  ImageIcon icon = new ImageIcon("moin.jpg");
+  JLabel label = new JLabel(icon);
+  frame.add(label);
+  frame.setDefaultCloseOperation
+         (JFrame.EXIT_ON_CLOSE);
+  frame.pack();
+  frame.setVisible(true);
+ }
 }
